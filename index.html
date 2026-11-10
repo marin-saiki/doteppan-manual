@@ -1,0 +1,276 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex,nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>店舗取り扱い説明書・緊急時マニュアル対応｜全店</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Cinzel:wght@600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 紺の暖簾ヒーロー（金の英字・明朝・粋の透かし）→ 3つのタブ。どてっぱん仕様：紺×金×朱・明朝見出し・金の罫線 */
+:root{
+  --bg:#ffffff; --fg:#0A1E3C; --sub:#5a6273; --line:#e6dcc6; --panel:#f8f4ea;
+  --accent:#0A1E3C; --accent-h:#16325e; --on-accent:#ffffff; --accent-soft:#D8C9A6; --accent-bg:#f8f4ea;
+  --gold:#BEA56E; --gold-ink:#8a7440; --shu:#E6461E;
+  --hero:#0A1E3C; --hero-fg:#ffffff; --hero-sub:#c9cfdb; --hero-line:rgba(190,165,110,.45);
+  --ok:#2f6b4a; --ok-bg:#e9f1ea; --warn:#9a6a14; --warn-bg:#f8efd9; --ng:#C81E00; --ng-bg:#fcebe5; --mute:#7b8190; --mute-bg:#f1efe9;
+  --f-head:"Shippori Mincho B1","Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;
+  --f-body:"Noto Sans JP","Yu Gothic","YuGothic","Hiragino Sans",sans-serif;
+  --f-en:"Cinzel","Times New Roman",serif;
+  --f-num:"DM Mono","Consolas",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#071428; --fg:#f1ece0; --sub:#a9b0bf; --line:#22365a; --panel:#0d2141;
+  --accent:#cdb680; --accent-h:#BEA56E; --on-accent:#0A1E3C; --accent-soft:#5c5034; --accent-bg:#132a4d;
+  --gold:#cdb680; --gold-ink:#cdb680; --shu:#ff6a44;
+  --hero:#040d1c; --hero-fg:#ffffff; --hero-sub:#b3bccc; --hero-line:rgba(205,182,128,.4);
+  --ok:#7fcf9c; --ok-bg:#12301f; --warn:#e5b45a; --warn-bg:#33270f; --ng:#ff7a56; --ng-bg:#3a1710; --mute:#9aa1b0; --mute-bg:#14264a;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#071428; --fg:#f1ece0; --sub:#a9b0bf; --line:#22365a; --panel:#0d2141;
+  --accent:#cdb680; --accent-h:#BEA56E; --on-accent:#0A1E3C; --accent-soft:#5c5034; --accent-bg:#132a4d;
+  --gold:#cdb680; --gold-ink:#cdb680; --shu:#ff6a44;
+  --hero:#040d1c; --hero-fg:#ffffff; --hero-sub:#b3bccc; --hero-line:rgba(205,182,128,.4);
+  --ok:#7fcf9c; --ok-bg:#12301f; --warn:#e5b45a; --warn-bg:#33270f; --ng:#ff7a56; --ng-bg:#3a1710; --mute:#9aa1b0; --mute-bg:#14264a;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.7;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--hero)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* hero */
+.hero{background:var(--hero);color:var(--hero-fg);position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+.hero::after{content:"粋";position:absolute;right:-.06em;bottom:-.22em;font-family:var(--f-head);font-weight:800;font-size:clamp(220px,34vw,420px);line-height:1;color:rgba(190,165,110,.07);pointer-events:none}
+.hero .wrap{padding-block:52px 42px;display:grid;gap:16px;position:relative;z-index:1}
+.hero .en{font-family:var(--f-en);font-weight:700;font-size:clamp(15px,2vw,19px);letter-spacing:.32em;color:var(--gold);margin:0;display:flex;align-items:center;gap:14px}
+.hero .en::after{content:"";flex:0 1 120px;height:1px;background:var(--hero-line)}
+.hero h1{font-family:var(--f-head);font-weight:800;font-size:clamp(30px,5.4vw,54px);margin:0;text-wrap:balance;line-height:1.3;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:5px 16px;font-family:var(--f-head);font-weight:700;font-size:13px;letter-spacing:.06em}
+.hero .pill{border:1px solid var(--gold);color:var(--gold);width:max-content;max-width:100%}
+.hero p{margin:0;color:var(--hero-sub);max-width:62ch}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.stat{border:1px solid var(--hero-line);border-radius:4px;padding:10px 18px;min-width:0}
+.stat b{display:block;font-family:var(--f-num);font-size:26px;line-height:1.1;color:var(--gold);font-variant-numeric:tabular-nums}
+.stat small{color:var(--hero-sub);font-size:12px;letter-spacing:.06em}
+.stat.red b{color:#ff7a56}
+
+/* tabs */
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:8px;padding-block:12px;overflow-x:auto}
+.tab{border:1px solid var(--accent-soft);background:transparent;color:var(--fg);border-radius:999px;padding:8px 18px;font-family:var(--f-head);font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.tab:hover{border-color:var(--gold)}
+.tab .cnt{font-family:var(--f-num);font-size:12px;margin-left:6px;opacity:.85}
+
+main .wrap{padding-block:28px 64px}
+section h2{font-family:var(--f-head);font-weight:800;font-size:28px;margin:0 0 6px;text-wrap:balance;letter-spacing:.04em}
+.lead{color:var(--sub);margin:0 0 22px;max-width:70ch}
+h3.grp{font-family:var(--f-head);font-weight:700;font-size:17px;letter-spacing:.1em;color:var(--fg);margin:34px 0 14px;display:flex;align-items:center;gap:12px}
+h3.grp::before{content:"";width:8px;height:8px;background:var(--gold);transform:rotate(45deg);flex:none}
+h3.grp::after{content:"";flex:1;height:1px;background:var(--gold)}
+
+/* manual cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:18px;display:grid;gap:10px;align-content:start;background:var(--bg);min-width:0}
+.card .maker{font-size:12px;color:var(--sub);letter-spacing:.06em}
+.card .name{font-family:var(--f-head);font-weight:700;font-size:17px;line-height:1.4;margin:0}
+.card .model{font-family:var(--f-num);font-size:13px;color:var(--fg);background:var(--panel);border-radius:10px;padding:2px 10px;width:max-content;max-width:100%;overflow-wrap:anywhere}
+.card .where{font-size:13px;color:var(--sub)}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;font-family:var(--f-head);border:1px solid var(--accent);color:var(--accent);background:transparent}
+.btn.main{background:var(--accent);color:var(--on-accent)}
+.btn.main:hover{background:var(--accent-h);border-color:var(--accent-h)}
+.btn:hover{border-color:var(--accent-h)}
+.tag{display:inline-block;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:700;font-family:var(--f-head)}
+.tag.paper{background:var(--ok-bg);color:var(--ok)}
+.tag.web{background:var(--mute-bg);color:var(--sub)}
+.tag.nopdf{background:var(--warn-bg);color:var(--warn)}
+.memo{font-size:13px;color:var(--sub);border-left:3px solid var(--gold);padding-left:10px}
+
+/* docs */
+.docgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.doc{border:1px solid var(--line);border-radius:4px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.doc .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.doc .from{font-family:var(--f-head);font-weight:700;font-size:15px}
+.doc .date{font-family:var(--f-num);font-size:12px;color:var(--sub)}
+.doc .imgs{font-family:var(--f-num);font-size:12px;color:var(--gold-ink)}
+.doc ul{margin:0;padding-left:1.1em;font-size:13.5px}
+.doc li{margin:1px 0}
+.doc .alert{font-size:13px;color:var(--ng);font-weight:700}
+
+/* minohin */
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:22px}
+.sum{border-radius:4px;border-top:2px solid var(--gold)!important;padding:12px 14px;border:1px solid var(--line)}
+.sum b{display:block;font-family:var(--f-num);font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.sum span{font-size:12.5px;color:var(--sub)}
+.sum.ng b{color:var(--ng)} .sum.diff b{color:var(--warn)} .sum.ok b{color:var(--ok)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.filters select,.filters input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);color:var(--fg);min-width:0}
+.filters input{flex:1 1 220px}
+.chk{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--sub)}
+.vendor{border:1px solid var(--line);border-radius:4px;margin-bottom:14px;overflow:hidden}
+.vendor > summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--panel)}
+.vendor > summary::-webkit-details-marker{display:none}
+.vendor > summary h4{margin:0;font-family:var(--f-head);font-weight:700;font-size:17px;letter-spacing:.04em}
+.vendor > summary .vsub{font-size:12.5px;color:var(--sub)}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.b{border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;font-family:var(--f-head);font-variant-numeric:tabular-nums}
+.b.ng{background:var(--ng-bg);color:var(--ng)} .b.diff{background:var(--warn-bg);color:var(--warn)} .b.ok{background:var(--ok-bg);color:var(--ok)} .b.mute{background:var(--mute-bg);color:var(--sub)}
+.tablebox{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+th,td{text-align:left;padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--sub);font-weight:500;letter-spacing:.04em;background:var(--bg)}
+td.num{font-family:var(--f-num);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.no{font-family:var(--f-num);color:var(--sub);white-space:nowrap}
+td .m{display:block;font-size:12.5px;color:var(--sub);margin-top:2px}
+.st{white-space:nowrap}
+.extra li{margin:4px 0}
+.empty{padding:16px 18px;color:var(--sub);font-size:14px}
+.note-box{border:1px solid var(--accent-soft);background:var(--accent-bg);border-radius:4px;padding:14px 18px;font-size:14px;margin:0 0 20px}
+.note-box b{color:var(--shu)}
+/* 納品の記録 */
+.savebar{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:4px;padding:10px 14px;font-size:13.5px;color:var(--sub);margin-bottom:18px}
+.savebar b{color:var(--fg)}
+.recent{border:1px solid var(--line);border-radius:4px;margin-bottom:20px}
+.recent h4{margin:0;padding:10px 14px;font-family:var(--f-head);font-size:15px;background:var(--panel);border-bottom:1px solid var(--line)}
+.recent ul{list-style:none;margin:0;padding:0}
+.recent li{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;padding:8px 14px;border-top:1px solid var(--line);font-size:13.5px}
+.recent li:first-child{border-top:0}
+.recent .when{font-family:var(--f-num);font-size:12px;color:var(--sub);margin-left:auto}
+.krow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;align-items:center;padding:12px 16px;border-top:1px solid var(--line)}
+.krow:first-child{border-top:0}
+.krow .kn{font-size:14px;min-width:0}
+.krow .kn small{display:block;color:var(--sub);font-size:12.5px;margin-top:2px}
+.krow .kq{font-family:var(--f-num);color:var(--sub);font-size:12.5px}
+.seg{display:inline-flex;border:1px solid var(--accent-soft);border-radius:999px;overflow:hidden;flex-wrap:nowrap}
+.seg button{font:inherit;font-family:var(--f-head);font-weight:700;font-size:13px;border:0;background:transparent;color:var(--sub);padding:7px 14px;cursor:pointer;white-space:nowrap}
+.seg button+button{border-left:1px solid var(--accent-soft)}
+.seg button[aria-pressed="true"].s-ok{background:var(--ok);color:#fff}
+.seg button[aria-pressed="true"].s-diff{background:var(--warn);color:#fff}
+.seg button[aria-pressed="true"].s-none{background:var(--ng);color:#fff}
+.seg button:disabled{cursor:not-allowed;opacity:.55}
+.linkbtn{font:inherit;font-size:12.5px;border:0;background:none;color:var(--gold-ink);text-decoration:underline;cursor:pointer;padding:0}
+.changed{font-size:12px;color:var(--gold-ink)}
+@media (max-width:560px){.krow{grid-template-columns:1fr}.seg{width:100%}.seg button{flex:1;padding:8px 6px}}
+/* 緊急時 */
+.sos{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:0 0 18px}
+.sosbtn{display:grid;gap:2px;text-decoration:none;border-radius:4px;padding:12px 14px;color:#fff;border:1px solid transparent}
+.sosbtn b{font-family:var(--f-num);font-size:22px;line-height:1.15;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.sosbtn span{font-size:12.5px;opacity:.92}
+.sosbtn.fire{background:#C81E00}.sosbtn.police{background:var(--hero)}.sosbtn.gas{background:#9a6a14}.sosbtn.soudan{background:#2f6b4a}
+:root[data-theme="dark"] .sosbtn.police{border-color:var(--gold)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sosbtn.police{border-color:var(--gold)}}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.jump a{font-family:var(--f-head);font-weight:700;font-size:13px;text-decoration:none;color:var(--fg);border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px}
+.jump a:hover{border-color:var(--gold)}
+.steps{margin:0;padding-left:1.4em;display:grid;gap:8px;max-width:72ch}
+.steps li::marker{font-family:var(--f-num);color:var(--gold-ink);font-weight:500}
+.steps.small{font-size:14px;gap:4px}
+.note{font-size:14px;color:var(--sub);max-width:72ch;margin:10px 0 14px}
+.note.small{font-size:12.5px;margin:8px 0}
+.area-switch{display:inline-flex;border:1px solid var(--accent);border-radius:999px;overflow:hidden;margin-bottom:4px}
+.aswitch{font:inherit;font-family:var(--f-head);font-weight:700;font-size:15px;border:0;background:transparent;color:var(--fg);padding:8px 26px;cursor:pointer}
+.aswitch[aria-selected="true"]{background:var(--accent);color:var(--on-accent)}
+.area{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.trbl{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px;min-width:0}
+.trbl.wide{margin-top:12px}
+.trbl h4{margin:0 0 8px;font-family:var(--f-head);font-weight:700;font-size:16px;line-height:1.45}
+.trbl p{margin:0;font-size:14px}
+.trbl dl{margin:0;display:grid;gap:8px}
+.trbl dt{font-weight:700;font-size:13.5px;color:var(--ng)}
+.trbl dd{margin:0;font-size:14px}
+.tel{font-family:var(--f-num);font-weight:500;white-space:nowrap}
+.phase{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.ph{border:1px solid var(--line);border-radius:4px;padding:14px 16px;background:var(--panel);min-width:0}
+.ph h4{margin:0 0 8px;font-family:var(--f-head);font-weight:700;font-size:16px}
+.ph ul{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:14px}
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.cbox{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px;min-width:0}
+.cbox h4{margin:0 0 6px;font-family:var(--f-head);font-weight:700;font-size:16px}
+.clist{list-style:none;margin:0;padding:0}
+.clist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-top:1px solid var(--line);align-items:baseline}
+.clist li:first-child{border-top:0}
+.clist li span{font-size:13.5px;min-width:0}
+.clist li b{font-size:15px;text-align:right}
+.clist li small{grid-column:1/-1;font-size:12px;color:var(--sub)}
+.clist li.empty-row span{color:var(--sub)}
+.sedit{display:grid;gap:8px;margin-top:10px}
+.sedit .row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:6px}
+.sedit input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;padding:7px 9px;background:var(--bg);color:var(--fg);min-width:0}
+.sedit .acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn.small{padding:5px 12px;font-size:12.5px;cursor:pointer;background:transparent}
+.btn.main.small{background:var(--accent)}
+@media (max-width:560px){.sedit .row{grid-template-columns:1fr 1fr}.aswitch{padding:8px 18px}}
+.cbox.wide2{grid-column:1/-1}
+.ftable{min-width:620px}
+.ftable td{font-size:13.5px}
+.ftable td.num{text-align:left;white-space:normal}
+.tips{margin:12px 0 0;padding-left:1.1em;display:grid;gap:5px;font-size:14px;max-width:80ch}
+.rulebox{border:2px solid var(--gold);border-radius:4px;padding:14px 16px;margin:0 0 14px;background:var(--panel)}
+.rulebox h4{margin:0 0 10px;font-family:var(--f-head);font-weight:800;font-size:17px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.rule{display:grid;gap:2px;min-width:0}
+.rule .rk{font-size:12px;letter-spacing:.08em;color:var(--gold-ink);font-weight:700}
+.rule b{font-family:var(--f-head);font-size:17px}
+.rule small{font-size:13px;color:var(--sub)}
+footer{border-top:1px solid var(--line);color:var(--sub);font-size:12.5px}
+footer .wrap{padding-block:22px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+/* 機器トラブル・取扱業者 */
+.eswitch{font:inherit;font-family:var(--f-head);font-weight:700;font-size:15px;border:0;background:transparent;color:var(--fg);padding:8px 22px;cursor:pointer}
+.eswitch[aria-selected="true"]{background:var(--accent);color:var(--on-accent)}
+.ebar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 6px}
+.ebar input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);color:var(--fg);flex:1 1 220px;min-width:0}
+.tsl{margin:0;display:grid;gap:7px}
+.tsl dt{font-weight:700;font-size:13.5px;color:var(--ng)}
+.tsl dd{margin:0;font-size:14px}
+.fixline{font-size:13px;border-top:1px dashed var(--line);padding-top:8px}
+.fixline span{display:inline-block;font-size:11.5px;letter-spacing:.06em;color:var(--gold-ink);font-weight:700;margin-right:8px}
+.vtable{min-width:640px}
+.vtable tbody tr:nth-child(even) td,.svtable tbody tr:nth-child(even) td{background:var(--panel)}
+.ntable{min-width:560px}
+.ntable td{font-size:13.5px;vertical-align:top}
+.ntable td.nv{width:11em;border-right:1px solid var(--line);background:var(--panel)}
+.ntable td.nv b{display:block;font-family:var(--f-head);font-size:14.5px}
+.ntable td.nv small{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+.ntable td.nk{width:7.5em;white-space:nowrap}
+.kchip{display:inline-block;font-size:11.5px;font-weight:700;border:1px solid var(--gold);color:var(--gold-ink);border-radius:999px;padding:1px 9px;white-space:nowrap}
+.vtable td{font-size:13.5px}
+.vtable td b{font-family:var(--f-head);font-size:14.5px}
+.nl{margin:0;padding-left:1.1em;display:grid;gap:3px;font-size:13px}
+.svtable{min-width:620px}
+.tel{font-family:var(--f-num)}
+.qrbox{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:10px;background:#fff}
+.qrbox img{flex:none;width:132px;height:132px;background:#fff}
+.qrbox span{font-size:12.5px;color:#3a3f4a}
+</style>
+<style>
+.report{border:2px solid var(--gold);border-radius:4px;padding:16px 18px;background:var(--panel);display:grid;gap:12px;margin:0 0 6px}
+.report h4{margin:0;font-family:var(--f-head);font-weight:800;font-size:18px}
+.lv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.lv > div{border:1px solid var(--line);border-radius:4px;padding:12px 14px;background:var(--bg);min-width:0}
+.lv h5{margin:0 0 6px;font-family:var(--f-head);font-size:15px}
+.lv .now h5{color:var(--ng)}
+.lv ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:14px}
+.tmpl{font-family:var(--f-body);font-size:13.5px;white-space:pre-wrap;background:var(--bg);border:1px dashed var(--accent-soft);border-radius:4px;padding:12px 14px;margin:0}
+.copybtn{cursor:pointer}
+.dont{border-left:3px solid var(--ng);padding:4px 0 4px 12px;font-size:14px}
+.dont ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:3px}
+.maplink{font-size:12px;margin-left:6px;white-space:nowrap}
+.sheetnote{font-size:12px;color:var(--sub);margin:8px 0 0}
+.stores{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.storecard{display:grid;gap:4px;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px}
+.storecard b{font-family:var(--f-head);font-size:18px}
+.storecard small{color:var(--sub);font-size:12.5px}
+.storecard:hover{border-color:var(--gold)}
+</style>
+<header class="hero"><div class="wrap">
+  <span class="pill">どてっぱん｜クルー用</span>
+  <p class="en">DOTEPPAN · MANUALS</p>
+  <h1>店舗取り扱い説明書<br><em>緊急時マニュアル対応</em></h1>
+  <p>自分の店を選んでください。緊急時の動き方、避難場所と交番、お客様トラブルの対応と報告、取引業者様がまとまっています。</p>
+</div></header>
+<main><div class="wrap"><h3 class="grp">関東</h3><div class="stores"><a class="storecard" href="tsukishima/"><small>どてっぱん</small><b>月島本店</b><small>東京都中央区月島3丁目9-9</small></a><a class="storecard" href="monzennakacho/"><small>どてっぱん</small><b>門前仲町店</b><small>東京都江東区門前仲町2-2-2 市川ビル1F</small></a><a class="storecard" href="hiyoshi/"><small>どてっぱん</small><b>日吉駅前店</b><small>神奈川県横浜市港北区日吉2-2-11</small></a><a class="storecard" href="matsudo/"><small>どてっぱん</small><b>松戸東口店</b><small>千葉県松戸市松戸1236 ニュートーキョーセブンビル4F</small></a><a class="storecard" href="maebashi/"><small>てっぱん</small><b>前橋店</b><small>群馬県前橋市千代田町2丁目7-20</small></a><a class="storecard" href="noborito/"><small>どてっぱん</small><b>登戸店</b><small>神奈川県川崎市多摩区登戸2583-4 1F</small></a><a class="storecard" href="mukogaoka/"><small>どてっぱん</small><b>向ヶ丘遊園店</b><small>神奈川県川崎市多摩区登戸1831 アムザビル2F</small></a></div><h3 class="grp">東海</h3><div class="stores"><a class="storecard" href="kariya/"><small>どてっぱん</small><b>刈谷駅前店</b><small>愛知県刈谷市相生町2丁目31-31 刈谷プラザホテル1F</small></a></div><h3 class="grp">関西</h3><div class="stores"><a class="storecard" href="ishiyama/"><small>どてっぱん</small><b>石山駅前店</b><small>滋賀県大津市粟津町8-21</small></a><a class="storecard" href="kiyamachi/"><small>どてっぱん</small><b>京都木屋町店</b><small>京都府京都市中京区下樵木町196</small></a><a class="storecard" href="namba/"><small>てっぱん</small><b>なんば北心斎橋駅前店</b><small>大阪府大阪市中央区西心斎橋1丁目15-12 アパホテル1階</small></a><a class="storecard" href="teradacho/"><small>ミニどてっぱん</small><b>大阪寺田町店</b><small>大阪府大阪市天王寺区大道4-1-5 1階</small></a></div><h3 class="grp">北海道</h3><div class="stores"><a class="storecard" href="sapporo/"><small>どてっぱん</small><b>札幌すすきの店</b><small>北海道札幌市中央区南5条西3丁目3-4 PRECIOUS6ビル B1F</small></a></div></div></main>
+<footer><div class="wrap">更新：2026年11月10日</div></footer>
+</body></html>

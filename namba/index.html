@@ -1,0 +1,545 @@
+<!doctype html><html><head><meta charset=utf8><meta name="robots" content="noindex,nofollow"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>なんば北心斎橋駅前店　店舗取り扱い説明書・緊急時マニュアル対応</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Cinzel:wght@600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: 紺の暖簾ヒーロー（金の英字・明朝・粋の透かし）→ 3つのタブ。どてっぱん仕様：紺×金×朱・明朝見出し・金の罫線 */
+:root{
+  --bg:#ffffff; --fg:#0A1E3C; --sub:#5a6273; --line:#e6dcc6; --panel:#f8f4ea;
+  --accent:#0A1E3C; --accent-h:#16325e; --on-accent:#ffffff; --accent-soft:#D8C9A6; --accent-bg:#f8f4ea;
+  --gold:#BEA56E; --gold-ink:#8a7440; --shu:#E6461E;
+  --hero:#0A1E3C; --hero-fg:#ffffff; --hero-sub:#c9cfdb; --hero-line:rgba(190,165,110,.45);
+  --ok:#2f6b4a; --ok-bg:#e9f1ea; --warn:#9a6a14; --warn-bg:#f8efd9; --ng:#C81E00; --ng-bg:#fcebe5; --mute:#7b8190; --mute-bg:#f1efe9;
+  --f-head:"Shippori Mincho B1","Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;
+  --f-body:"Noto Sans JP","Yu Gothic","YuGothic","Hiragino Sans",sans-serif;
+  --f-en:"Cinzel","Times New Roman",serif;
+  --f-num:"DM Mono","Consolas",monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#071428; --fg:#f1ece0; --sub:#a9b0bf; --line:#22365a; --panel:#0d2141;
+  --accent:#cdb680; --accent-h:#BEA56E; --on-accent:#0A1E3C; --accent-soft:#5c5034; --accent-bg:#132a4d;
+  --gold:#cdb680; --gold-ink:#cdb680; --shu:#ff6a44;
+  --hero:#040d1c; --hero-fg:#ffffff; --hero-sub:#b3bccc; --hero-line:rgba(205,182,128,.4);
+  --ok:#7fcf9c; --ok-bg:#12301f; --warn:#e5b45a; --warn-bg:#33270f; --ng:#ff7a56; --ng-bg:#3a1710; --mute:#9aa1b0; --mute-bg:#14264a;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#071428; --fg:#f1ece0; --sub:#a9b0bf; --line:#22365a; --panel:#0d2141;
+  --accent:#cdb680; --accent-h:#BEA56E; --on-accent:#0A1E3C; --accent-soft:#5c5034; --accent-bg:#132a4d;
+  --gold:#cdb680; --gold-ink:#cdb680; --shu:#ff6a44;
+  --hero:#040d1c; --hero-fg:#ffffff; --hero-sub:#b3bccc; --hero-line:rgba(205,182,128,.4);
+  --ok:#7fcf9c; --ok-bg:#12301f; --warn:#e5b45a; --warn-bg:#33270f; --ng:#ff7a56; --ng-bg:#3a1710; --mute:#9aa1b0; --mute-bg:#14264a;
+  color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.7;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--hero)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* hero */
+.hero{background:var(--hero);color:var(--hero-fg);position:relative;overflow:hidden;border-bottom:3px solid var(--gold)}
+.hero::after{content:"粋";position:absolute;right:-.06em;bottom:-.22em;font-family:var(--f-head);font-weight:800;font-size:clamp(220px,34vw,420px);line-height:1;color:rgba(190,165,110,.07);pointer-events:none}
+.hero .wrap{padding-block:52px 42px;display:grid;gap:16px;position:relative;z-index:1}
+.hero .en{font-family:var(--f-en);font-weight:700;font-size:clamp(15px,2vw,19px);letter-spacing:.32em;color:var(--gold);margin:0;display:flex;align-items:center;gap:14px}
+.hero .en::after{content:"";flex:0 1 120px;height:1px;background:var(--hero-line)}
+.hero h1{font-family:var(--f-head);font-weight:800;font-size:clamp(30px,5.4vw,54px);margin:0;text-wrap:balance;line-height:1.3;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:5px 16px;font-family:var(--f-head);font-weight:700;font-size:13px;letter-spacing:.06em}
+.hero .pill{border:1px solid var(--gold);color:var(--gold);width:max-content;max-width:100%}
+.hero p{margin:0;color:var(--hero-sub);max-width:62ch}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.stat{border:1px solid var(--hero-line);border-radius:4px;padding:10px 18px;min-width:0}
+.stat b{display:block;font-family:var(--f-num);font-size:26px;line-height:1.1;color:var(--gold);font-variant-numeric:tabular-nums}
+.stat small{color:var(--hero-sub);font-size:12px;letter-spacing:.06em}
+.stat.red b{color:#ff7a56}
+
+/* tabs */
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:8px;padding-block:12px;overflow-x:auto}
+.tab{border:1px solid var(--accent-soft);background:transparent;color:var(--fg);border-radius:999px;padding:8px 18px;font-family:var(--f-head);font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.tab:hover{border-color:var(--gold)}
+.tab .cnt{font-family:var(--f-num);font-size:12px;margin-left:6px;opacity:.85}
+
+main .wrap{padding-block:28px 64px}
+section h2{font-family:var(--f-head);font-weight:800;font-size:28px;margin:0 0 6px;text-wrap:balance;letter-spacing:.04em}
+.lead{color:var(--sub);margin:0 0 22px;max-width:70ch}
+h3.grp{font-family:var(--f-head);font-weight:700;font-size:17px;letter-spacing:.1em;color:var(--fg);margin:34px 0 14px;display:flex;align-items:center;gap:12px}
+h3.grp::before{content:"";width:8px;height:8px;background:var(--gold);transform:rotate(45deg);flex:none}
+h3.grp::after{content:"";flex:1;height:1px;background:var(--gold)}
+
+/* manual cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:18px;display:grid;gap:10px;align-content:start;background:var(--bg);min-width:0}
+.card .maker{font-size:12px;color:var(--sub);letter-spacing:.06em}
+.card .name{font-family:var(--f-head);font-weight:700;font-size:17px;line-height:1.4;margin:0}
+.card .model{font-family:var(--f-num);font-size:13px;color:var(--fg);background:var(--panel);border-radius:10px;padding:2px 10px;width:max-content;max-width:100%;overflow-wrap:anywhere}
+.card .where{font-size:13px;color:var(--sub)}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;font-family:var(--f-head);border:1px solid var(--accent);color:var(--accent);background:transparent}
+.btn.main{background:var(--accent);color:var(--on-accent)}
+.btn.main:hover{background:var(--accent-h);border-color:var(--accent-h)}
+.btn:hover{border-color:var(--accent-h)}
+.tag{display:inline-block;border-radius:999px;padding:1px 10px;font-size:12px;font-weight:700;font-family:var(--f-head)}
+.tag.paper{background:var(--ok-bg);color:var(--ok)}
+.tag.web{background:var(--mute-bg);color:var(--sub)}
+.tag.nopdf{background:var(--warn-bg);color:var(--warn)}
+.memo{font-size:13px;color:var(--sub);border-left:3px solid var(--gold);padding-left:10px}
+
+/* docs */
+.docgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.doc{border:1px solid var(--line);border-radius:4px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.doc .top{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between}
+.doc .from{font-family:var(--f-head);font-weight:700;font-size:15px}
+.doc .date{font-family:var(--f-num);font-size:12px;color:var(--sub)}
+.doc .imgs{font-family:var(--f-num);font-size:12px;color:var(--gold-ink)}
+.doc ul{margin:0;padding-left:1.1em;font-size:13.5px}
+.doc li{margin:1px 0}
+.doc .alert{font-size:13px;color:var(--ng);font-weight:700}
+
+/* minohin */
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:22px}
+.sum{border-radius:4px;border-top:2px solid var(--gold)!important;padding:12px 14px;border:1px solid var(--line)}
+.sum b{display:block;font-family:var(--f-num);font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.sum span{font-size:12.5px;color:var(--sub)}
+.sum.ng b{color:var(--ng)} .sum.diff b{color:var(--warn)} .sum.ok b{color:var(--ok)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}
+.filters select,.filters input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);color:var(--fg);min-width:0}
+.filters input{flex:1 1 220px}
+.chk{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--sub)}
+.vendor{border:1px solid var(--line);border-radius:4px;margin-bottom:14px;overflow:hidden}
+.vendor > summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--panel)}
+.vendor > summary::-webkit-details-marker{display:none}
+.vendor > summary h4{margin:0;font-family:var(--f-head);font-weight:700;font-size:17px;letter-spacing:.04em}
+.vendor > summary .vsub{font-size:12.5px;color:var(--sub)}
+.badges{display:flex;gap:6px;flex-wrap:wrap}
+.b{border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700;font-family:var(--f-head);font-variant-numeric:tabular-nums}
+.b.ng{background:var(--ng-bg);color:var(--ng)} .b.diff{background:var(--warn-bg);color:var(--warn)} .b.ok{background:var(--ok-bg);color:var(--ok)} .b.mute{background:var(--mute-bg);color:var(--sub)}
+.tablebox{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:560px}
+th,td{text-align:left;padding:9px 12px;border-top:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--sub);font-weight:500;letter-spacing:.04em;background:var(--bg)}
+td.num{font-family:var(--f-num);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.no{font-family:var(--f-num);color:var(--sub);white-space:nowrap}
+td .m{display:block;font-size:12.5px;color:var(--sub);margin-top:2px}
+.st{white-space:nowrap}
+.extra li{margin:4px 0}
+.empty{padding:16px 18px;color:var(--sub);font-size:14px}
+.note-box{border:1px solid var(--accent-soft);background:var(--accent-bg);border-radius:4px;padding:14px 18px;font-size:14px;margin:0 0 20px}
+.note-box b{color:var(--shu)}
+/* 納品の記録 */
+.savebar{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:4px;padding:10px 14px;font-size:13.5px;color:var(--sub);margin-bottom:18px}
+.savebar b{color:var(--fg)}
+.recent{border:1px solid var(--line);border-radius:4px;margin-bottom:20px}
+.recent h4{margin:0;padding:10px 14px;font-family:var(--f-head);font-size:15px;background:var(--panel);border-bottom:1px solid var(--line)}
+.recent ul{list-style:none;margin:0;padding:0}
+.recent li{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;padding:8px 14px;border-top:1px solid var(--line);font-size:13.5px}
+.recent li:first-child{border-top:0}
+.recent .when{font-family:var(--f-num);font-size:12px;color:var(--sub);margin-left:auto}
+.krow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;align-items:center;padding:12px 16px;border-top:1px solid var(--line)}
+.krow:first-child{border-top:0}
+.krow .kn{font-size:14px;min-width:0}
+.krow .kn small{display:block;color:var(--sub);font-size:12.5px;margin-top:2px}
+.krow .kq{font-family:var(--f-num);color:var(--sub);font-size:12.5px}
+.seg{display:inline-flex;border:1px solid var(--accent-soft);border-radius:999px;overflow:hidden;flex-wrap:nowrap}
+.seg button{font:inherit;font-family:var(--f-head);font-weight:700;font-size:13px;border:0;background:transparent;color:var(--sub);padding:7px 14px;cursor:pointer;white-space:nowrap}
+.seg button+button{border-left:1px solid var(--accent-soft)}
+.seg button[aria-pressed="true"].s-ok{background:var(--ok);color:#fff}
+.seg button[aria-pressed="true"].s-diff{background:var(--warn);color:#fff}
+.seg button[aria-pressed="true"].s-none{background:var(--ng);color:#fff}
+.seg button:disabled{cursor:not-allowed;opacity:.55}
+.linkbtn{font:inherit;font-size:12.5px;border:0;background:none;color:var(--gold-ink);text-decoration:underline;cursor:pointer;padding:0}
+.changed{font-size:12px;color:var(--gold-ink)}
+@media (max-width:560px){.krow{grid-template-columns:1fr}.seg{width:100%}.seg button{flex:1;padding:8px 6px}}
+/* 緊急時 */
+.sos{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:0 0 18px}
+.sosbtn{display:grid;gap:2px;text-decoration:none;border-radius:4px;padding:12px 14px;color:#fff;border:1px solid transparent}
+.sosbtn b{font-family:var(--f-num);font-size:22px;line-height:1.15;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.sosbtn span{font-size:12.5px;opacity:.92}
+.sosbtn.fire{background:#C81E00}.sosbtn.police{background:var(--hero)}.sosbtn.gas{background:#9a6a14}.sosbtn.soudan{background:#2f6b4a}
+:root[data-theme="dark"] .sosbtn.police{border-color:var(--gold)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sosbtn.police{border-color:var(--gold)}}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.jump a{font-family:var(--f-head);font-weight:700;font-size:13px;text-decoration:none;color:var(--fg);border:1px solid var(--accent-soft);border-radius:999px;padding:5px 14px}
+.jump a:hover{border-color:var(--gold)}
+.steps{margin:0;padding-left:1.4em;display:grid;gap:8px;max-width:72ch}
+.steps li::marker{font-family:var(--f-num);color:var(--gold-ink);font-weight:500}
+.steps.small{font-size:14px;gap:4px}
+.note{font-size:14px;color:var(--sub);max-width:72ch;margin:10px 0 14px}
+.note.small{font-size:12.5px;margin:8px 0}
+.area-switch{display:inline-flex;border:1px solid var(--accent);border-radius:999px;overflow:hidden;margin-bottom:4px}
+.aswitch{font:inherit;font-family:var(--f-head);font-weight:700;font-size:15px;border:0;background:transparent;color:var(--fg);padding:8px 26px;cursor:pointer}
+.aswitch[aria-selected="true"]{background:var(--accent);color:var(--on-accent)}
+.area{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.trbl{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px;min-width:0}
+.trbl.wide{margin-top:12px}
+.trbl h4{margin:0 0 8px;font-family:var(--f-head);font-weight:700;font-size:16px;line-height:1.45}
+.trbl p{margin:0;font-size:14px}
+.trbl dl{margin:0;display:grid;gap:8px}
+.trbl dt{font-weight:700;font-size:13.5px;color:var(--ng)}
+.trbl dd{margin:0;font-size:14px}
+.tel{font-family:var(--f-num);font-weight:500;white-space:nowrap}
+.phase{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.ph{border:1px solid var(--line);border-radius:4px;padding:14px 16px;background:var(--panel);min-width:0}
+.ph h4{margin:0 0 8px;font-family:var(--f-head);font-weight:700;font-size:16px}
+.ph ul{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:14px}
+.cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.cbox{border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px;min-width:0}
+.cbox h4{margin:0 0 6px;font-family:var(--f-head);font-weight:700;font-size:16px}
+.clist{list-style:none;margin:0;padding:0}
+.clist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:8px 0;border-top:1px solid var(--line);align-items:baseline}
+.clist li:first-child{border-top:0}
+.clist li span{font-size:13.5px;min-width:0}
+.clist li b{font-size:15px;text-align:right}
+.clist li small{grid-column:1/-1;font-size:12px;color:var(--sub)}
+.clist li.empty-row span{color:var(--sub)}
+.sedit{display:grid;gap:8px;margin-top:10px}
+.sedit .row{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:6px}
+.sedit input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:4px;padding:7px 9px;background:var(--bg);color:var(--fg);min-width:0}
+.sedit .acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn.small{padding:5px 12px;font-size:12.5px;cursor:pointer;background:transparent}
+.btn.main.small{background:var(--accent)}
+@media (max-width:560px){.sedit .row{grid-template-columns:1fr 1fr}.aswitch{padding:8px 18px}}
+.cbox.wide2{grid-column:1/-1}
+.ftable{min-width:620px}
+.ftable td{font-size:13.5px}
+.ftable td.num{text-align:left;white-space:normal}
+.tips{margin:12px 0 0;padding-left:1.1em;display:grid;gap:5px;font-size:14px;max-width:80ch}
+.rulebox{border:2px solid var(--gold);border-radius:4px;padding:14px 16px;margin:0 0 14px;background:var(--panel)}
+.rulebox h4{margin:0 0 10px;font-family:var(--f-head);font-weight:800;font-size:17px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.rule{display:grid;gap:2px;min-width:0}
+.rule .rk{font-size:12px;letter-spacing:.08em;color:var(--gold-ink);font-weight:700}
+.rule b{font-family:var(--f-head);font-size:17px}
+.rule small{font-size:13px;color:var(--sub)}
+footer{border-top:1px solid var(--line);color:var(--sub);font-size:12.5px}
+footer .wrap{padding-block:22px}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+
+/* 機器トラブル・取扱業者 */
+.eswitch{font:inherit;font-family:var(--f-head);font-weight:700;font-size:15px;border:0;background:transparent;color:var(--fg);padding:8px 22px;cursor:pointer}
+.eswitch[aria-selected="true"]{background:var(--accent);color:var(--on-accent)}
+.ebar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 6px}
+.ebar input{font:inherit;font-size:14px;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);color:var(--fg);flex:1 1 220px;min-width:0}
+.tsl{margin:0;display:grid;gap:7px}
+.tsl dt{font-weight:700;font-size:13.5px;color:var(--ng)}
+.tsl dd{margin:0;font-size:14px}
+.fixline{font-size:13px;border-top:1px dashed var(--line);padding-top:8px}
+.fixline span{display:inline-block;font-size:11.5px;letter-spacing:.06em;color:var(--gold-ink);font-weight:700;margin-right:8px}
+.vtable{min-width:640px}
+.vtable tbody tr:nth-child(even) td,.svtable tbody tr:nth-child(even) td{background:var(--panel)}
+.ntable{min-width:560px}
+.ntable td{font-size:13.5px;vertical-align:top}
+.ntable td.nv{width:11em;border-right:1px solid var(--line);background:var(--panel)}
+.ntable td.nv b{display:block;font-family:var(--f-head);font-size:14.5px}
+.ntable td.nv small{display:block;font-size:12px;color:var(--sub);margin-top:2px}
+.ntable td.nk{width:7.5em;white-space:nowrap}
+.kchip{display:inline-block;font-size:11.5px;font-weight:700;border:1px solid var(--gold);color:var(--gold-ink);border-radius:999px;padding:1px 9px;white-space:nowrap}
+.vtable td{font-size:13.5px}
+.vtable td b{font-family:var(--f-head);font-size:14.5px}
+.nl{margin:0;padding-left:1.1em;display:grid;gap:3px;font-size:13px}
+.svtable{min-width:620px}
+.tel{font-family:var(--f-num)}
+.qrbox{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:10px;background:#fff}
+.qrbox img{flex:none;width:132px;height:132px;background:#fff}
+.qrbox span{font-size:12.5px;color:#3a3f4a}
+</style>
+<style>
+.report{border:2px solid var(--gold);border-radius:4px;padding:16px 18px;background:var(--panel);display:grid;gap:12px;margin:0 0 6px}
+.report h4{margin:0;font-family:var(--f-head);font-weight:800;font-size:18px}
+.lv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.lv > div{border:1px solid var(--line);border-radius:4px;padding:12px 14px;background:var(--bg);min-width:0}
+.lv h5{margin:0 0 6px;font-family:var(--f-head);font-size:15px}
+.lv .now h5{color:var(--ng)}
+.lv ul{margin:0;padding-left:1.1em;display:grid;gap:4px;font-size:14px}
+.tmpl{font-family:var(--f-body);font-size:13.5px;white-space:pre-wrap;background:var(--bg);border:1px dashed var(--accent-soft);border-radius:4px;padding:12px 14px;margin:0}
+.copybtn{cursor:pointer}
+.dont{border-left:3px solid var(--ng);padding:4px 0 4px 12px;font-size:14px}
+.dont ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:3px}
+.maplink{font-size:12px;margin-left:6px;white-space:nowrap}
+.sheetnote{font-size:12px;color:var(--sub);margin:8px 0 0}
+.stores{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.storecard{display:grid;gap:4px;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:4px;padding:14px 16px}
+.storecard b{font-family:var(--f-head);font-size:18px}
+.storecard small{color:var(--sub);font-size:12.5px}
+.storecard:hover{border-color:var(--gold)}
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">てっぱん なんば北心斎橋駅前店｜クルー用</span>
+    <p class="en">NAMBA KITA-SHINSAIBASHI · MANUALS</p>
+    <h1>なんば北心斎橋駅前店<br><em>店舗取り扱い説明書・緊急時マニュアル対応</em></h1>
+    <p>緊急時の動き方、お客様トラブルの対応と報告、取引業者様をまとめたクルー用のページです。困ったら、まず「緊急時」タブを開いてください。</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="ページ切替">
+  <div class="wrap" role="tablist">
+    <button class="tab" role="tab" id="tab-kinkyu" data-view="kinkyu" aria-selected="true">緊急時</button>
+    <button class="tab" role="tab" id="tab-okyaku" data-view="okyaku" aria-selected="false">お客様トラブル</button>
+    <button class="tab" role="tab" id="tab-gyosha" data-view="gyosha" aria-selected="false">取引業者様</button>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <section id="v-kinkyu">
+      <h2>緊急時マニュアル</h2>
+      <p class="lead">てっぱん なんば北心斎橋駅前店（大阪市中央区西心斎橋1丁目15-12 アパホテル1階）のクルー向けです。迷ったら、まず<b>お客様と自分の安全</b>、次に<b>社員へ連絡</b>。一人で判断しなくて大丈夫です。</p>
+
+      <div class="sos">
+        <a class="sosbtn fire" href="tel:119"><b>119</b><span>火事・救急</span></a>
+        <a class="sosbtn police" href="tel:110"><b>110</b><span>事件・暴力・食い逃げ</span></a>
+        <a class="sosbtn gas" href="tel:0120019424"><b>0120-0-19424</b><span>ガス漏れ（大阪ガス・24時間）</span></a>
+        <a class="sosbtn soudan" href="tel:%237119"><b>#7119</b><span>救急車を呼ぶか迷ったら</span></a>
+      </div>
+
+      <nav class="jump" aria-label="緊急時の項目">
+        <a href="#k-first">まず最初に</a><a href="#k-jishin">地震・避難</a><a href="#k-kaji">火事・ガス・停電</a><a href="#okyaku">お客様トラブル →</a><a href="#k-renraku">連絡先</a><a href="#k-chikaku">避難場所・交番</a>
+      </nav>
+
+      <h3 class="grp" id="k-first">まず最初に（どの緊急時も同じ）</h3>
+      <ol class="steps">
+        <li><b>安全を確保する。</b>お客様、クルー、自分の順にけががないか見る。危ない場所からは離れる。</li>
+        <li><b>大きな声で周りに知らせる。</b>「火事です！」「地震です、頭を守ってください！」。一人で抱えない。</li>
+        <li><b>必要なら119・110。</b>命に関わることは、社員への連絡より先に通報してかまいません。</li>
+        <li><b>社員に電話する。</b>下の「連絡先」の上から順に。つながるまで次の人へ。</li>
+        <li><b>あとで記録する。</b>いつ・何が・誰が・どうしたかを、落ち着いてからメモ。写真もあると助かります。</li>
+      </ol>
+
+      <article class="trbl wide">
+        <h4>ガスメーターの戻し方（地震のあと、火がつかないとき）</h4>
+        <ol class="steps small">
+          <li>鉄板など、すべてのガス器具の栓を閉める。</li>
+          <li>ガスメーターの復帰ボタンのキャップを外し、ボタンを奥まで押してゆっくり離す。</li>
+          <li>3分ほど待つ（その間ガスは使わない）。ランプの点滅が消えたら使える。</li>
+          <li>ガス臭いとき、何度やっても戻らないときは、大阪ガス <a class="tel" href="tel:0120019424">0120-0-19424</a>（ガス漏れ・24時間）。</li>
+        </ol>
+        <p class="note small">ガスメーターの場所は「連絡先」の「店内の場所」を見てください。ビルのガスがプロパンの場合は、ボンベの業者に連絡します（社員に確認）。</p>
+      </article>
+
+      <h3 class="grp" id="k-jishin">地震</h3>
+      <div class="phase">
+        <div class="ph"><h4>揺れている間</h4>
+          <ul>
+            <li>「地震です！頭を守ってください！」と大きな声でお客様に伝える。</li>
+            <li>自分も頭を守る。棚・ガラス・鉄板から離れる。</li>
+            <li><b>揺れている間に火を消しに行かない。</b>熱い鉄板や油でやけどをします。</li>
+            <li>近くにいれば出入口のドアを開けて、出口を確保する。</li>
+          </ul></div>
+        <div class="ph"><h4>揺れが収まったら</h4>
+          <ul>
+            <li>鉄板のガス栓を閉める。ほかの火も止める。</li>
+            <li>お客様とクルーのけがを確認。けが人がいたら119。</li>
+            <li>あわてて外へ走らせない。落下物・ガラスに気をつけて誘導する。</li>
+            <li>お会計は後回し。<b>安全が先</b>。お客様の連絡先を控えられれば控える。</li>
+            <li>社員へ連絡。営業を続けるかは社員が決める。</li>
+          </ul></div>
+        <div class="ph"><h4>避難するとき</h4>
+          <ul>
+            <li>近くの避難先：<b>御津公園</b>（中央区西心斎橋2-11）、<b>堀江公園</b>（西区南堀江1-13）。</li>
+            <li>大きな火事が広がっているとき：靭公園（広域避難場所）、浪速公園一帯（広域避難場所）。</li>
+            <li>エレベーターは使わない。階段で避難する。</li>
+            <li>出る前にガス栓を閉める。ブレーカーは落としてから出る。</li>
+            <li>クルー全員がそろっているか、避難先で数える。</li>
+          </ul></div>
+      </div>
+
+      <h3 class="grp" id="k-kaji">火事・ガス漏れ・停電</h3>
+      <div class="phase">
+        <div class="ph"><h4>火事</h4>
+          <ul>
+            <li>「火事です！」と大声で知らせる。</li>
+            <li>119番。「大阪市中央区西心斎橋1丁目15-12 アパホテル1階、てっぱん なんば北心斎橋駅前店。〇〇が燃えています」</li>
+            <li>初期消火は消火器で。<b>鉄板の油に水はかけない</b>。</li>
+            <li>火が天井に届いたら消すのをやめて、お客様を外へ誘導。</li>
+          </ul></div>
+        <div class="ph"><h4>ガス漏れ（ガス臭い）</h4>
+          <ul>
+            <li>火を使わない。換気扇・照明・電気のスイッチに触らない（火花が出る）。</li>
+            <li>ガス栓を閉める。窓とドアを開ける。</li>
+            <li>お客様を外へ。<b>店の外から</b>大阪ガス <a class="tel" href="tel:0120019424">0120-0-19424</a>（ガス漏れ・24時間）。</li>
+            <li>050で始まるIP電話からはつながらないことがある。その場合は携帯から。</li>
+          </ul></div>
+        <div class="ph"><h4>停電</h4>
+          <ul>
+            <li>店だけか、周りもかを確認（隣の店・外の信号）。店だけならブレーカー。</li>
+            <li>周りも停電なら、鉄板のガス栓を閉める。冷蔵庫は開けない。</li>
+            <li>暗い客席はスマホのライトで足元を照らして誘導。</li>
+            <li>関西電力送配電 <a class="tel" href="tel:08007773081">0800-777-3081</a>（IP電話から 050-3085-3081）。</li>
+          </ul></div>
+      </div>
+
+      <h3 class="grp" id="k-renraku">連絡先</h3>
+      <div class="contacts">
+        <article class="cbox">
+          <h4>店の連絡先（社員）・店内の場所</h4>
+          <p class="note small">上から順に電話。つながらなければ次の人へ。</p>
+          <ul class="clist" id="staffList"></ul>
+          <p class="sheetnote"><span id="sheetState"></span> 社員の方へ：連絡先や店内の場所が変わったら、<a id="sheetEdit" href="#" target="_blank" rel="noopener">連絡先シート</a>の自分の店の行を書きかえてください（このページにすぐ反映されます）。</p>
+        </article>
+        <article class="cbox">
+          <h4>緊急・公共</h4>
+          <ul class="clist">
+            <li><span>火事・救急</span><b class="tel">119</b></li>
+            <li><span>警察（事件・事故）</span><b class="tel">110</b></li>
+            <li><span>救急安心センター（救急車を呼ぶか迷ったら）</span><b><a class="tel" href="tel:%237119">#7119</a></b><small>つながらないときは119</small></li>
+            <li><span>大阪ガス（ガス漏れ・24時間）</span><b><a class="tel" href="tel:0120019424">0120-0-19424</a></b></li>
+            <li><span>関西電力送配電（停電・電気設備）</span><b><a class="tel" href="tel:08007773081">0800-777-3081</a></b><small>IP電話から 050-3085-3081</small></li>
+            <li><span>この店の電話</span><b><a class="tel" href="tel:0667328038">06-6732-8038</a></b></li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="grp" id="k-chikaku">避難場所・交番</h3>
+      <div class="contacts">
+        <article class="cbox">
+          <h4>避難場所</h4>
+          <ul class="clist"><li><span>地震などのとき</span><b>御津公園</b><small>一時避難場所・中央区西心斎橋2-11・店から約200m <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E5%BE%A1%E6%B4%A5%E5%85%AC%E5%9C%92%20%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%A5%BF%E5%BF%83%E6%96%8E%E6%A9%8B2-11" target="_blank" rel="noopener">地図 ↗</a></small></li><li><span>地震などのとき</span><b>堀江公園</b><small>一時避難場所・西区南堀江1-13・店から約340m <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E5%A0%80%E6%B1%9F%E5%85%AC%E5%9C%92%20%E8%A5%BF%E5%8C%BA%E5%8D%97%E5%A0%80%E6%B1%9F1-13" target="_blank" rel="noopener">地図 ↗</a></small></li><li><span>大きな火事のとき</span><b>靭公園（広域避難場所）</b><small>西区靱本町1・店から約1.3km <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E9%9D%AD%E5%85%AC%E5%9C%92%EF%BC%88%E5%BA%83%E5%9F%9F%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80%EF%BC%89%20%E8%A5%BF%E5%8C%BA%E9%9D%B1%E6%9C%AC%E7%94%BA1" target="_blank" rel="noopener">地図 ↗</a></small></li><li><span>大きな火事のとき</span><b>浪速公園一帯（広域避難場所）</b><small>浪速区塩草1-1・店から約1.4km <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E6%B5%AA%E9%80%9F%E5%85%AC%E5%9C%92%E4%B8%80%E5%B8%AF%EF%BC%88%E5%BA%83%E5%9F%9F%E9%81%BF%E9%9B%A3%E5%A0%B4%E6%89%80%EF%BC%89%20%E6%B5%AA%E9%80%9F%E5%8C%BA%E5%A1%A9%E8%8D%891-1" target="_blank" rel="noopener">地図 ↗</a></small></li></ul>
+          <p class="note small">どこが開くかは災害の種類と状況で変わります。市区のハザードマップもあわせて確認してください。</p>
+        </article>
+        <article class="cbox">
+          <h4>交番</h4>
+          <ul class="clist"><li><span>近くの交番</span><b>西心斎橋交番（南警察署）</b><small>中央区西心斎橋2-11-29・店から約210m <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E8%A5%BF%E5%BF%83%E6%96%8E%E6%A9%8B%E4%BA%A4%E7%95%AA%EF%BC%88%E5%8D%97%E8%AD%A6%E5%AF%9F%E7%BD%B2%EF%BC%89%20%E4%B8%AD%E5%A4%AE%E5%8C%BA%E8%A5%BF%E5%BF%83%E6%96%8E%E6%A9%8B2-11-29" target="_blank" rel="noopener">地図 ↗</a></small></li></ul>
+          <p class="note small">事件・事故・食い逃げは、交番に行くより先に <b class="tel">110</b>。落とし物の届け出や相談は交番へ。</p>
+        </article>
+      </div>
+      <p class="note small">避難場所は国土地理院の「指定緊急避難場所データ」、交番は各県警と地図の情報から、店に近いものを選びました（距離は直線）。消火器・AED・ガスメーター・分電盤の場所は、店で確認して連絡先シートに書き足してください。</p>
+    </section>
+
+    <section id="v-okyaku" hidden>
+      <h2>お客様トラブル</h2>
+      <p class="lead">お客様に何かあったときの<b>その場の対応</b>と<b>報告のしかた</b>です。一人で抱えず、決められないことは「責任者に確認します」と言って社員につないでください。</p>
+
+      <div class="report">
+        <h4>報告のしかた</h4>
+        <div class="lv">
+          <div class="now"><h5>すぐ社員に電話（営業中でも）</h5>
+            <ul>
+              <li>お客様がけがをした・具合が悪くなった・救急車を呼んだ</li>
+              <li>警察を呼んだ（暴力・食い逃げ・物を壊された）</li>
+              <li>料理に異物が入っていた</li>
+              <li>アレルギーの症状が出た／食中毒かもしれないと言われた</li>
+              <li>返金・無料・値引きを求められた</li>
+              <li>「口コミやSNSに書く」と言われた・強いお叱り</li>
+            </ul></div>
+          <div><h5>営業のあとに報告でよい</h5>
+            <ul>
+              <li>その場でおわびして収まった小さなお叱り</li>
+              <li>料理の出し忘れ・間違い（作り直して収まったもの）</li>
+              <li>忘れ物・落とし物</li>
+              <li>ほめられたこと・うれしかった声も、ぜひ報告</li>
+            </ul></div>
+        </div>
+        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、エリア責任者・本部へつなぎます。</p>
+        <div>
+          <h5 style="margin:0 0 6px;font-family:var(--f-head);font-size:15px">報告に書くこと（コピーして使えます）</h5>
+<pre class="tmpl" id="tmpl">【お客様トラブル報告】てっぱん なんば北心斎橋駅前店
+日時：　月　日（　）　：
+対応した人：
+お客様：卓番・人数・特徴（わかれば連絡先）
+何が起きたか：
+その場でした対応：
+お客様の反応（納得された／お怒りのまま 等）：
+社員への連絡：誰に・何時に
+写真・現物：あり／なし
+このあとすること：</pre>
+          <div class="links" style="margin-top:8px"><button type="button" class="btn small copybtn" data-copy="tmpl">報告文をコピー</button></div>
+        </div>
+        <div class="dont"><b>やってはいけないこと</b>
+          <ul>
+            <li>返金・無料・値引きをその場で約束する（決めるのは社員）</li>
+            <li>言い訳する・お客様の話をさえぎる</li>
+            <li>口コミやSNSに、店やクルーの立場から返信・反論する</li>
+            <li>お客様の名前や連絡先を、店のグループ以外に送る</li>
+          </ul></div>
+      </div>
+
+      <h3 class="grp">その場の対応</h3>
+      <div class="cases">
+        <article class="trbl"><h4>やけど（鉄板）</h4><p>すぐに流水で15〜20分冷やす。服の上からなら脱がさずそのまま冷やす。水ぶくれはつぶさない。広い範囲・顔・子どものやけどは119。社員へすぐ電話。</p></article>
+        <article class="trbl"><h4>急に具合が悪くなった・倒れた</h4><p>声をかけて反応を見る。反応がない・呼吸がおかしいときは119（AEDの場所は「連絡先」）。救急車を呼ぶか迷ったら 救急安心センター #7119。周りのお客様には席を少し離れてもらう。</p></article>
+        <article class="trbl"><h4>アレルギーを聞かれた・症状が出た</h4><p>原材料は<b>その場で「大丈夫です」と言わない</b>。社員に確認してから答える。食べたあとに息苦しさ・じんましん・ぐったりしたら119。</p></article>
+        <article class="trbl"><h4>料理に異物が入っていた</h4><p>まず心からおわびする。現物は捨てずに保管し、写真を撮る。作り直し・返金は社員が判断するので、その場で約束しない。社員へすぐ電話。</p></article>
+        <article class="trbl"><h4>「食べたあとにお腹をこわした」と連絡があった</h4><p>おわびして、日時・人数・食べた物・症状・病院に行ったかを聞き取ってメモ。<b>原因をその場で認めたり否定したりしない</b>。お客様の連絡先を聞き、社員へすぐ電話。保健所への対応は社員がします。</p></article>
+        <article class="trbl"><h4>クレーム・お叱り</h4><p>さえぎらずに最後まで聞く。不快な思いをさせたことをおわびする。言い訳しない。自分で決められないことは「責任者に確認します」と言って社員につなぐ。一人で対応し続けない。</p></article>
+        <article class="trbl"><h4>電話でのクレーム</h4><p>名前・連絡先・来店した日時と内容をメモ。「責任者から折り返します」と伝えて、その場で結論を出さない。社員へすぐ連絡。</p></article>
+        <article class="trbl"><h4>酔ったお客様・迷惑行為</h4><p>二人以上で対応する。ほかのお客様の安全が先。お酒の提供は社員と相談して止める。暴力・おどし・物を壊したら、迷わず110。</p></article>
+        <article class="trbl"><h4>食い逃げ（お会計せずに帰った）</h4><p><b>追いかけない。</b>けがをします。特徴（服・人数・向かった方向）と時間をメモして、社員と110。</p></article>
+        <article class="trbl"><h4>お客様の持ち物がなくなった</h4><p>一緒に席の周りを探す。見つからなければ社員へ連絡し、お客様には交番（または110）への届け出をすすめる。防犯カメラの確認は社員がします。</p></article>
+        <article class="trbl"><h4>忘れ物・落とし物</h4><p>日時・席・品物を書いて保管。財布・スマホなど大事な物は社員が管理。取りに来たら本人確認をしてから渡す。</p></article>
+        <article class="trbl"><h4>お客様同士のけんか</h4><p>間に入らず、二人以上で声をかける。ほかのお客様を離す。手が出たら110。</p></article>
+      </div>
+    </section>
+    <section id="v-gyosha" hidden>
+      <h2>取引業者様</h2>
+      <p class="lead">てっぱん なんば北心斎橋駅前店の取引業者様です。発注はMPSが基本。発注の締め切りや届く日は、MPSの画面か社員に確認してください。</p>
+      <div class="tablebox"><table class="vtable" style="min-width:0">
+        <thead><tr><th>カテゴリー</th><th>取引業者様</th></tr></thead>
+        <tbody><tr><td>野菜</td><td><b>村上商事(株)</b></td></tr><tr><td>肉</td><td><b>(株)牛長</b></td></tr><tr><td>魚介・冷凍の食材</td><td><b>（株）山大</b></td></tr><tr><td>キムチ</td><td><b>株式会社MNY</b></td></tr><tr><td>牛もつ・冷凍の食材</td><td><b>日本食研(株)</b></td></tr><tr><td>乾物・調味料・食材全般</td><td><b>高瀬物産(株)</b></td></tr><tr><td>ドリンク・ソース・出汁</td><td><b>（株）カクヤス【うまプロ】</b></td></tr><tr><td>食器・厨房の備品</td><td><b>（株）マルキ</b></td></tr><tr><td>洗剤・ペーパー・手袋</td><td><b>（株）ティーポールサービス</b></td></tr></tbody>
+      </table></div>
+      <p class="note small">MPSで直近3か月に発注した取引業者様の一覧です（2026年11月10日時点）。機械の修理業者は社員に確認してください。取引業者様への連絡は、基本的に社員がします。MPSのログイン情報はこのページに載せていません。</p>
+    </section>
+  </div>
+</main>
+
+<footer><div class="wrap">更新：2026年11月10日／<a href="../">全店の一覧へ</a></div></footer>
+
+<script>
+const STORE_NAME = "なんば北心斎橋駅前店";
+let STAFF = {"staff": [{"role": "担当社員", "name": "", "tel": ""}, {"role": "担当社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": ""}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
+const $ = q => document.querySelector(q);
+const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---- 社員の連絡先・店内の場所：Googleスプレッドシートから読む（読めないときはページ内の値） ---- */
+const SHEET_ID = "1B_BYXCEeTGw15jL4Kpp5_PBgtcA8X7aYfRpA5yp-j8w";
+const SHEET_EDIT = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
+function renderStaff(){
+  const tl = n => n ? `<a class="tel" href="tel:${n.replace(/[^0-9+#]/g,"")}">${esc(n)}</a>` : "";
+  $("#staffList").innerHTML = STAFF.staff.map(r=>`<li class="${r.tel?"":"empty-row"}"><span>${esc(r.role)}${r.name?`　${esc(r.name)}`:""}</span><b>${r.tel?tl(r.tel):"未記入"}</b></li>`).join("")
+    + `<li><span style="font-family:var(--f-head);font-weight:700;padding-top:6px">店内の場所</span><b></b></li>`
+    + STAFF.places.map(r=>`<li class="${r.name?"":"empty-row"}"><span>${esc(r.role)}</span><b>${esc(r.name)||"未記入"}</b></li>`).join("");
+}
+window.__sheetCb = function(res){
+  try{
+    const rows = (res.table.rows||[]).map(r => (r.c||[]).map(c => c ? String(c.f ?? c.v ?? "").trim() : ""));
+    const mine = rows.filter(r => r[0] === STORE_NAME);
+    if(!mine.length) return;
+    const staff = mine.filter(r=>r[1]==="社員").map(r=>({role:r[2]||"社員",name:r[3]||"",tel:r[4]||""}));
+    const places = mine.filter(r=>r[1]==="場所").map(r=>({role:r[2]||"",name:r[3]||""}));
+    // 名前の入った社員を上に（空欄は下に1つだけ残す）
+    const filled = staff.filter(r=>r.name||r.tel), blank = staff.filter(r=>!(r.name||r.tel));
+    STAFF = {staff: filled.concat(blank.slice(0, filled.length ? 1 : 2)), places};
+    renderStaff();
+    const n = document.getElementById("sheetState"); if(n) n.textContent = "連絡先シートの最新の内容を表示しています。";
+  }catch(err){}
+};
+(function(){
+  const s = document.createElement("script");
+  s.src = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/gviz/tq?tqx=responseHandler:__sheetCb&headers=1&t=" + Date.now();
+  s.async = true; document.head.appendChild(s);
+  const a = document.getElementById("sheetEdit"); if(a) a.href = SHEET_EDIT;
+})();
+document.addEventListener("click", ev => {
+  const b = ev.target.closest(".copybtn"); if(!b) return;
+  const t = document.getElementById(b.dataset.copy).textContent;
+  (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(()=>{ b.textContent="コピーしました"; setTimeout(()=>b.textContent="報告文をコピー",1800); }).catch(()=>{ const r=document.createRange(); r.selectNodeContents(document.getElementById(b.dataset.copy)); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r); });
+});
+
+const VIEWS = ["kinkyu","okyaku","gyosha"];
+function show(view){
+  VIEWS.forEach(k=>{ $("#v-"+k).hidden = k!==view; $("#tab-"+k).setAttribute("aria-selected", k===view); });
+  try{ history.replaceState(null,"","#"+view); }catch(err){}
+}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{ show(b.dataset.view); window.scrollTo({top:$(".tabs").offsetTop,behavior:"smooth"}); }));
+document.querySelectorAll(".jump a").forEach(a=>a.addEventListener("click",ev=>{
+  const h=a.getAttribute("href"); ev.preventDefault();
+  if(VIEWS.includes(h.slice(1))){ show(h.slice(1)); window.scrollTo({top:$(".tabs").offsetTop,behavior:"smooth"}); return; }
+  const t=document.querySelector(h); if(t) t.scrollIntoView({behavior:"smooth",block:"start"});
+}));
+renderStaff();
+const h0=(location.hash||"").slice(1); show(VIEWS.includes(h0)?h0:"kinkyu");
+</script>
+</body></html>
