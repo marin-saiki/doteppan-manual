@@ -433,7 +433,7 @@ footer .wrap{padding-block:22px}
               <li>ほめられたこと・うれしかった声も、ぜひ報告</li>
             </ul></div>
         </div>
-        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、エリア責任者・本部へつなぎます。</p>
+        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、AM・本部へつなぎます。</p>
         <div>
           <h5 style="margin:0 0 6px;font-family:var(--f-head);font-size:15px">報告に書くこと（コピーして使えます）</h5>
 <pre class="tmpl" id="tmpl">【お客様トラブル報告】どてっぱん 松戸東口店
@@ -489,12 +489,12 @@ footer .wrap{padding-block:22px}
 
 <script>
 const STORE_NAME = "松戸東口店";
-let STAFF = {"staff": [{"role": "担当社員", "name": "太田", "tel": "090-9366-6066"}, {"role": "担当社員", "name": "木村", "tel": "090-8827-7849"}, {"role": "担当社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": ""}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
+let STAFF = {"staff": [{"role": "AM", "name": "太田", "tel": "090-9366-6066"}, {"role": "CF", "name": "木村", "tel": "090-8827-7849"}, {"role": "社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "店内になし。近くのAED：①東邦薬品株式会社 松戸営業所（2階事務所内 窓際カウンター）　松戸市松戸2303－2・店から約510m・平日 8:30〜17:00 ／ ②KITE MITE MATSUDO 10F（施設内）　松戸市松戸1307-1 ASIAN FOOD GARDEN・店から約590m・毎日 11:00〜22:00"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
 const $ = q => document.querySelector(q);
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 /* ---- 社員の連絡先・店内の場所：Googleスプレッドシートから読む（読めないときはページ内の値） ---- */
-const SHEET_ID = "1B_BYXCEeTGw15jL4Kpp5_PBgtcA8X7aYfRpA5yp-j8w";
+const SHEET_ID = "1VzICMzBaioA_014OJZl75kdv1tiChww0-QdWR1kaRYY";
 const SHEET_EDIT = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
 function renderStaff(){
   const tl = n => n ? `<a class="tel" href="tel:${n.replace(/[^0-9+#]/g,"")}">${esc(n)}</a>` : "";

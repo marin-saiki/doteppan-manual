@@ -433,7 +433,7 @@ footer .wrap{padding-block:22px}
               <li>ほめられたこと・うれしかった声も、ぜひ報告</li>
             </ul></div>
         </div>
-        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、エリア責任者・本部へつなぎます。</p>
+        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、AM・本部へつなぎます。</p>
         <div>
           <h5 style="margin:0 0 6px;font-family:var(--f-head);font-size:15px">報告に書くこと（コピーして使えます）</h5>
 <pre class="tmpl" id="tmpl">【お客様トラブル報告】どてっぱん 札幌すすきの店
@@ -489,12 +489,12 @@ footer .wrap{padding-block:22px}
 
 <script>
 const STORE_NAME = "札幌すすきの店";
-let STAFF = {"staff": [{"role": "担当社員", "name": "髙木", "tel": "090-6735-0272"}, {"role": "エリア責任者", "name": "才木", "tel": "080-5761-4869"}, {"role": "担当社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": ""}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
+let STAFF = {"staff": [{"role": "社員", "name": "髙木", "tel": "090-6735-0272"}, {"role": "AM", "name": "才木", "tel": "080-5761-4869"}, {"role": "社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "店内になし。近くのAED：①MJクリニック札幌（サザンクロス札幌2階 クリニック内）　札幌市中央区南3条西3丁目11-1・店から約310m・毎日 9:00〜18:00 ／ ②ホテルビスタ札幌［大通］（ホテルビスタ札幌［大通］フロント）　札幌市中央区南三条西5-16・店から約440m・24時間"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
 const $ = q => document.querySelector(q);
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 /* ---- 社員の連絡先・店内の場所：Googleスプレッドシートから読む（読めないときはページ内の値） ---- */
-const SHEET_ID = "1B_BYXCEeTGw15jL4Kpp5_PBgtcA8X7aYfRpA5yp-j8w";
+const SHEET_ID = "1k5NqNVnLdshLNNhCdQRgD2JEOc3J0Gsij8COTSkfApM";
 const SHEET_EDIT = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
 function renderStaff(){
   const tl = n => n ? `<a class="tel" href="tel:${n.replace(/[^0-9+#]/g,"")}">${esc(n)}</a>` : "";

@@ -489,7 +489,7 @@ footer .wrap{padding-block:22px}
               <li>ほめられたこと・うれしかった声も、ぜひ報告</li>
             </ul></div>
         </div>
-        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、エリア責任者・本部へつなぎます。</p>
+        <p class="note small" style="margin:0">電話は「連絡先」（緊急時タブの下）の社員に上から順に。つながらなければ次の人へ。報告を受けた社員が、AM・本部へつなぎます。</p>
         <div>
           <h5 style="margin:0 0 6px;font-family:var(--f-head);font-size:15px">報告に書くこと（コピーして使えます）</h5>
 <pre class="tmpl" id="tmpl">【お客様トラブル報告】ミニどてっぱん 大阪寺田町店
@@ -797,10 +797,10 @@ function renderVendors(){
 
 /* ---- 緊急時：社員の連絡先と場所 ---- */
 const STORE_NAME = "大阪寺田町店";
-let STAFF = {"staff": [{"role": "店長", "name": "野村 亜衣", "tel": "080-8525-2765"}, {"role": "エリア責任者", "name": "才木 麻海", "tel": "080-5761-4869"}, {"role": "担当社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "店内になし（119番で近くのAEDの場所と、心臓マッサージのやり方を聞く）"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
+let STAFF = {"staff": [{"role": "社員", "name": "野村 亜衣", "tel": "080-8525-2765"}, {"role": "AM", "name": "才木 麻海", "tel": "080-5761-4869"}, {"role": "社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "店内になし。近くのAED：①田中建設株式会社（事務所入口１階受付カウンター付近）　大阪市天王寺区北河堀町4-9・店から約480m・月・火・水・木・金・土 8:30〜17:00 ／ ②天王寺ミオ（天王寺ミオ 本館1階 東エレベーターホール）　大阪市天王寺区悲田院町10-39・店から約790m・毎日 5:00〜23:00"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
 
 /* ---- 社員の連絡先・店内の場所：Googleスプレッドシートから読む（読めないときはページ内の値） ---- */
-const SHEET_ID = "1B_BYXCEeTGw15jL4Kpp5_PBgtcA8X7aYfRpA5yp-j8w";
+const SHEET_ID = "1ByuOuL7ixjTn4j4bltiDM_a8KwGs3_VuCjCePYFdy9U";
 const SHEET_EDIT = "https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit";
 function renderStaff(){
   const tl = n => n ? `<a class="tel" href="tel:${n.replace(/[^0-9+#]/g,"")}">${esc(n)}</a>` : "";
