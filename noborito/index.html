@@ -257,6 +257,7 @@ footer .wrap{padding-block:22px}
 .copybtn{cursor:pointer}
 .dont{border-left:3px solid var(--ng);padding:4px 0 4px 12px;font-size:14px}
 .dont ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:3px}
+.clist li.long b{grid-column:1/-1;text-align:left;font-weight:500;font-size:13.5px;line-height:1.6;font-family:var(--f-body)}
 .maplink{font-size:12px;margin-left:6px;white-space:nowrap}
 .sheetnote{font-size:12px;color:var(--sub);margin:8px 0 0}
 .stores{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
@@ -489,7 +490,7 @@ footer .wrap{padding-block:22px}
 
 <script>
 const STORE_NAME = "登戸店";
-let STAFF = {"staff": [{"role": "社員", "name": "", "tel": ""}, {"role": "社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "店内になし。近くのAED：①医療法人社団 登戸クリニック（GranSoleil登戸1F 登戸クリニック内）　川崎市多摩区登戸2566-1・店から約100m・月・火・水・木・金・土・祝日 9:00〜19:30 ／ ②セブン‐イレブン 川崎登戸駅前店（バックカウンター）　川崎市多摩区登戸3375-1・店から約130m・24時間"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
+let STAFF = {"staff": [{"role": "社員", "name": "", "tel": ""}, {"role": "社員", "name": "", "tel": ""}], "places": [{"role": "消火器", "name": ""}, {"role": "AED", "name": "近くのAED：①医療法人社団 登戸クリニック（GranSoleil登戸1F 登戸クリニック内）　川崎市多摩区登戸2566-1・店から約100m・月・火・水・木・金・土・祝日 9:00〜19:30 ／ ②セブン‐イレブン 川崎登戸駅前店（バックカウンター）　川崎市多摩区登戸3375-1・店から約130m・24時間"}, {"role": "ガスメーター", "name": ""}, {"role": "分電盤（ブレーカー）", "name": ""}, {"role": "救急箱", "name": ""}]};
 const $ = q => document.querySelector(q);
 const esc = v => String(v ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -500,7 +501,11 @@ function renderStaff(){
   const tl = n => n ? `<a class="tel" href="tel:${n.replace(/[^0-9+#]/g,"")}">${esc(n)}</a>` : "";
   $("#staffList").innerHTML = STAFF.staff.map(r=>`<li class="${r.tel?"":"empty-row"}"><span>${esc(r.role)}${r.name?`　${esc(r.name)}`:""}</span><b>${r.tel?tl(r.tel):"未記入"}</b></li>`).join("")
     + `<li><span style="font-family:var(--f-head);font-weight:700;padding-top:6px">店内の場所</span><b></b></li>`
-    + STAFF.places.map(r=>`<li class="${r.name?"":"empty-row"}"><span>${esc(r.role)}</span><b>${esc(r.name)||"未記入"}</b></li>`).join("");
+    + STAFF.places.map(r=>{
+        const v = String(r.name||"").replace(/^店内になし。?/,"");
+        if(v.length > 18) return `<li class="long"><span>${esc(r.role)}</span><b>${v.split(/\s*／\s*/).map(x=>esc(x)).join("<br>")}</b></li>`;
+        return `<li class="${v?"":"empty-row"}"><span>${esc(r.role)}</span><b>${esc(v)||"未記入"}</b></li>`;
+      }).join("");
 }
 window.__sheetCb = function(res){
   try{
